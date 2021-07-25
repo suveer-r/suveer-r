@@ -23,7 +23,7 @@ module.exports = {
     },
 
     iconPaths: {
-      favicon: "img/icons/favicon.ico",
+      favicon: null,
       favicon32: "img/icons/maskable_icon_x32.png",
       favicon16: "img/icons/maskable_icon_x16.png",
       appleTouchIcon: "img/icons/maskable_icon_x192.png",
@@ -40,25 +40,25 @@ module.exports = {
           src: "img/icons/favicon-16x16.png",
           sizes: "16x16",
           type: "image/png",
-          purpose: "any",
+          purpose: "image/png",
         },
         {
           src: "img/icons/favicon-32x32.png",
           sizes: "32x32",
           type: "image/png",
-          purpose: "any",
+          purpose: "image/png",
         },
         {
           src: "img/icons/maskable_icon_x48.png",
           sizes: "48x48",
           type: "image/png",
-          purpose: "any maskable",
+          purpose: "image/png",
         },
         {
           src: "img/icons/maskable_icon_x72.png",
           sizes: "72x72",
           type: "image/png",
-          purpose: "any maskable",
+          purpose: "image/png",
         },
         {
           src: "img/icons/maskable_icon_x96.png",
