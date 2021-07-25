@@ -11,7 +11,7 @@ module.exports = {
   pwa: {
     name: "Suveer Raina",
     themeColor: "#00bfa9",
-    msTileColor: "#eeeeee",
+    msTileColor: "#00bfa9",
     appleMobileWebAppCapable: "yes",
     appleMobileWebAppStatusBarStyle: "white",
 
@@ -20,6 +20,15 @@ module.exports = {
     workboxOptions: {
       skipWaiting: true,
       clientsClaim: true,
+    },
+
+    iconPaths: {
+      favicon: "img/icons/favicon.ico",
+      favicon32: "img/icons/maskable_icon_x32.png",
+      favicon16: "img/icons/maskable_icon_x16.png",
+      appleTouchIcon: "img/icons/maskable_icon_x192.png",
+      maskIcon: "img/icons/maskable_icon_x512.png",
+      msTileImage: "img/icons/maskable_icon_x128.png",
     },
   },
 
