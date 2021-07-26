@@ -98,8 +98,8 @@ export default class loader extends Vue {}
 }
 
 .logo svg#logo-svg-main {
-  height: 70%;
-  width: 70%;
+  height: 50%;
+  width: 50%;
 }
 
 /* line 169, src/scss/components/_page.scss */
@@ -136,9 +136,9 @@ export default class loader extends Vue {}
   stroke-miterlimit: 10;
   stroke-dasharray: 878.7;
   stroke-dashoffset: 878.7;
-  animation: loaded4 2s ease-in;
+  animation: loaded4 4s ease-in;
   animation-fill-mode: both;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-iteration-count: infinite;
   animation-delay: 0.5s;
 }
@@ -218,16 +218,26 @@ export default class loader extends Vue {}
     stroke-dashoffset: 878.7;
     fill-opacity: 0;
   }
-  45% {
+  20% {
     fill: $light;
     fill-opacity: 0;
   }
-  90%,
-  100% {
+  45%,
+  55% {
     fill: $light;
-    stroke-opacity: 0;
+    // stroke-opacity: 0;
     stroke-dashoffset: 0;
     fill-opacity: 1;
+  }
+  80% {
+    fill: $light;
+    fill-opacity: 0;
+  }
+  100% {
+    fill: $light;
+    stroke-opacity: 1;
+    stroke-dashoffset: -878.7;
+    fill-opacity: 0;
   }
 }
 

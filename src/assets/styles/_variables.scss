@@ -1,8 +1,19 @@
-$primary-color: #00bfa9;
-$secondary-color: #0076bf;
-$accent-1: #00ffa9;
-$accent-2: #00a1b1;
-$dark: #001714;
-$light: #eeeeee;
-$grey: #333;
-$orange: #ea3d0f;
+:root {
+  --color-primary: #00bfa9;
+  --color-secondary: #0076bf;
+  --accent-primary: #00ffa9;
+  --accent-secondary: #00a1b1;
+  --light: #eee;
+  --dark: #001714;
+  --grey: #333;
+  --orange: #ea3d0f;
+}
+
+$primary-color: var(--color-primary);
+$secondary-color: var(--color-secondary);
+$accent-1: var(--accent-primary);
+$accent-2: var(--accent-secondary);
+$dark: var(--dark);
+$light: var(--light);
+$grey: var(--grey);
+$orange: var(--orange);
