@@ -1,6 +1,8 @@
 <template>
   <div class="home" id="home">
     <Loader style="margin: 0 auto" />
+
+    <span id="construct">Under Construction...</span>
   </div>
 </template>
 
@@ -18,6 +20,7 @@ import Loader from "../components/loader.vue"
   },
   mounted() {
     this.postLoad()
+    this.showMessage()
   },
   methods: {
     appendMetaTags() {
@@ -44,6 +47,12 @@ import Loader from "../components/loader.vue"
       h = window.innerHeight
       home?.setAttribute("style", `height: ${h}px`)
     },
+    showMessage() {
+      var construct = document.getElementById("construct")
+      setTimeout(() => {
+        construct?.setAttribute("style", "visibility: visible;opacity: 1;")
+      }, 1000)
+    },
   },
   // setup() {
   //   const meta = useMeta({
@@ -54,4 +63,13 @@ import Loader from "../components/loader.vue"
 export default class Home extends Vue {}
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+#construct {
+  font-weight: 400;
+  position: relative;
+  top: 50%;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  visibility: hidden;
+}
+</style>
