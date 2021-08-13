@@ -9,15 +9,6 @@
 </template>
 
 <style lang="scss">
-* {
-  font-family: "JetBrainsMonoVariable", "JetBrainsMono", monospace;
-  font-feature-settings: "liga" on, "calt" on;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  text-align: center;
-  font-optical-sizing: auto;
-}
-
 #app {
   color: $dark;
 }

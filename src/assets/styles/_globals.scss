@@ -8,6 +8,12 @@
   text-rendering: optimizeLegibility;
   fill: none;
   stroke: none;
+  font-family: "JetBrainsMonoVariable", "JetBrainsMono", monospace;
+  font-feature-settings: "liga" on, "calt" on;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  text-align: center;
+  font-optical-sizing: auto;
 }
 
 html,

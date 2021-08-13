@@ -2,9 +2,9 @@
 const colors = require("tailwindcss/colors")
 
 module.exports = {
-  purge: [],
+  purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   presets: [],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "media", // false or 'media' or 'class'
   theme: {
     screens: {
       sm: "640px",
