@@ -1,5 +1,7 @@
 <template>
-  <suv class="white-text">Suveer</suv>
+  <suv class="white-text font-thin italic text-current cursor-crosshair"
+    >&#60;<span class="text-primary-color">Suveer</span>/&#62;</suv
+  >
   <!-- <div id="nav">
     <router-link tag="btn" to="/">Home</router-link>
   </div> -->
@@ -7,11 +9,16 @@
 </template>
 
 <style lang="scss">
-#app {
-  font-family: "Montserrat-Regular", sans-serif;
+* {
+  font-family: "JetBrainsMonoVariable", "JetBrainsMono", monospace;
+  font-feature-settings: "liga" on, "calt" on;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   text-align: center;
+  font-optical-sizing: auto;
+}
+
+#app {
   color: $dark;
 }
 
@@ -32,7 +39,8 @@
 }
 
 suv {
-  font-family: "GreatVibes", cursive;
+  font-family: "JetBrainsMono", monospace;
+  // font-style: italic;
   color: $light;
   font-size: 32px;
   float: left;

@@ -98,6 +98,7 @@ export default class loader extends Vue {}
 }
 
 .logo svg#logo-svg-main {
+  margin: 0 auto;
   height: 50%;
   width: 50%;
 }

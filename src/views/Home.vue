@@ -2,7 +2,9 @@
   <div class="home" id="home">
     <Loader style="margin: 0 auto" />
 
-    <span id="construct">Under Construction...</span>
+    <span id="construct" class="italic font-semibold"
+      >[...UNDER_CONSTRUCTION()]</span
+    >
   </div>
 </template>
 
@@ -65,7 +67,6 @@ export default class Home extends Vue {}
 
 <style lang="scss" scoped>
 #construct {
-  font-weight: 400;
   position: relative;
   top: 50%;
   opacity: 0;
