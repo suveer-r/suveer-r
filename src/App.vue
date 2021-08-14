@@ -1,6 +1,6 @@
 <template>
   <suv class="white-text font-thin italic text-current cursor-crosshair"
-    >&#60;<span class="text-primary-color">Suveer</span>/&#62;</suv
+    >&#60;/<span class="text-primary-color">Suveer</span>/&#62;</suv
   >
   <!-- <div id="nav">
     <router-link tag="btn" to="/">Home</router-link>
@@ -30,14 +30,10 @@
 }
 
 suv {
-  font-family: "JetBrainsMono", monospace;
-  // font-style: italic;
-  color: $light;
   font-size: 16px;
-  text-transform: uppercase;
   float: left;
   position: fixed;
-  top: 1em;
-  left: 1em;
+  top: 1.5em;
+  left: 1.5em;
 }
 </style>
