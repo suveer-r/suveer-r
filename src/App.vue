@@ -33,7 +33,8 @@ suv {
   font-family: "JetBrainsMono", monospace;
   // font-style: italic;
   color: $light;
-  font-size: 14px;
+  font-size: 16px;
+  text-transform: uppercase;
   float: left;
   position: fixed;
   top: 1em;
