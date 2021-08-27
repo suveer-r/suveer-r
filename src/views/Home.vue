@@ -2,18 +2,19 @@
   <div class="home" id="home">
     <Loader style="margin: 0 auto" />
 
-    <span id="construct" class="italic font-semibold"
-      >[...UNDER_CONSTRUCTION()]</span
-    >
+    <div id="construct">
+      <span class="italic font-semibold">[...UNDER_CONSTRUCTION()]</span>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component" // @ is an alias to /src
+import { defineComponent } from "vue" // @ is an alias to /src
 import Loader from "../components/loader.vue"
 // import { useMeta } from "vue-meta"
 
-@Options({
+export default defineComponent({
+  name: "Home",
   components: {
     Loader,
   },
@@ -54,13 +55,7 @@ import Loader from "../components/loader.vue"
       }, 1000)
     },
   },
-  // setup() {
-  //   const meta = useMeta({
-  //     title: "Suveer Raina 👋",
-  //   })
-  // },
 })
-export default class Home extends Vue {}
 </script>
 
 <style lang="scss" scoped>

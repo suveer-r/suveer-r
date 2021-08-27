@@ -68,6 +68,7 @@ module.exports = {
   css: {
     loaderOptions: {
       sass: {
+        implementation: require("sass"), // This line must in sass option
         prependData: `
           @import "./src/assets/styles/_variables.scss";
           @import "./src/assets/styles/_globals.scss";

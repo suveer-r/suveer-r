@@ -1,0 +1,195 @@
+{
+  "knowledge": {
+    "language": {
+      "0": {
+        "lang": "C#",
+        "level": 10,
+        "icon": ""
+      },
+      "1": {
+        "lang": "Java",
+        "level": 10,
+        "icon": ""
+      },
+      "2": {
+        "lang": "Javascript",
+        "level": 10,
+        "icon": ""
+      },
+      "3": {
+        "lang": "Typescript",
+        "level": 10,
+        "icon": ""
+      },
+      "4": {
+        "lang": "Css",
+        "level": 10,
+        "icon": ""
+      },
+      "5": {
+        "lang": "Sass",
+        "level": 10,
+        "icon": ""
+      },
+      "6": {
+        "lang": "Html",
+        "level": 10,
+        "icon": ""
+      },
+      "7": {
+        "lang": "Json",
+        "level": 10,
+        "icon": ""
+      },
+      "8": {
+        "lang": "Xml",
+        "level": 10,
+        "icon": ""
+      },
+      "9": {
+        "lang": "Svg",
+        "level": 10,
+        "icon": ""
+      },
+      "10": {
+        "lang": "Markdown",
+        "level": 10,
+        "icon": ""
+      }
+    },
+    "tools/frameworks": {
+      "0": {
+        "lang": "Unity3D",
+        "level": 10,
+        "icon": ""
+      },
+      "1": {
+        "lang": "Cocos2D",
+        "level": 10,
+        "icon": ""
+      },
+      "2": {
+        "lang": "Phaser",
+        "level": 10,
+        "icon": ""
+      },
+      "3": {
+        "lang": "Vue",
+        "level": 10,
+        "icon": ""
+      },
+      "4": {
+        "lang": "Nuxt",
+        "level": 10,
+        "icon": ""
+      },
+      "5": {
+        "lang": "Ionic",
+        "level": 10,
+        "icon": ""
+      },
+      "6": {
+        "lang": "ThreeJS",
+        "level": 10,
+        "icon": ""
+      },
+      "7": {
+        "lang": "Bootstrap",
+        "level": 10,
+        "icon": ""
+      },
+      "8": {
+        "lang": "Tailwind",
+        "level": 10,
+        "icon": ""
+      },
+      "9": {
+        "lang": "Git",
+        "level": 10,
+        "icon": ""
+      },
+      "11": {
+        "lang": "Plastic SCM",
+        "level": 10,
+        "icon": ""
+      },
+      "12": {
+        "lang": "Netlify",
+        "level": 10,
+        "icon": ""
+      },
+      "13": {
+        "lang": "Vercel",
+        "level": 10,
+        "icon": ""
+      },
+      "14": {
+        "lang": "Firebase",
+        "level": 10,
+        "icon": ""
+      },
+      "15": {
+        "lang": "Github",
+        "level": 10,
+        "icon": ""
+      },
+      "16": {
+        "lang": "Yarn",
+        "level": 10,
+        "icon": ""
+      }
+    },
+    "skills": {
+      "0": {
+        "lang": "Gameplay",
+        "level": 10,
+        "icon": ""
+      },
+      "1": {
+        "lang": "Tooling",
+        "level": 10,
+        "icon": ""
+      },
+      "2": {
+        "lang": "Scripting",
+        "level": 10,
+        "icon": ""
+      },
+      "3": {
+        "lang": "User Interface",
+        "level": 10,
+        "icon": ""
+      },
+      "4": {
+        "lang": "Jamstack",
+        "level": 10,
+        "icon": ""
+      },
+      "5": {
+        "lang": "Web Development",
+        "level": 10,
+        "icon": ""
+      },
+      "6": {
+        "lang": "Vectors",
+        "level": 10,
+        "icon": ""
+      },
+      "7": {
+        "lang": "Version Control",
+        "level": 10,
+        "icon": ""
+      }
+    }
+  },
+  "colors": {
+    "primary": "#00BFA9",
+    "secondary": "#0083D8",
+    "tertiary": "#5964C4",
+    "contrast": "#F0544F",
+    "dark": "#45607B",
+    "light": "#EBFFFD",
+    "black": "#212121",
+    "white": "#FFFFFF"
+  }
+}

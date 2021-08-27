@@ -1,19 +1,34 @@
 :root {
   --color-primary: #00bfa9;
-  --color-secondary: #0076bf;
-  --accent-primary: #00ffa9;
-  --accent-secondary: #00a1b1;
-  --light: #eee;
-  --dark: #45607b;
-  --grey: #333;
-  --orange: #ea3d0f;
+  --color-secondary: #0083d8;
+  --color-accent-1: #5964c4;
+  --color-accent-2: #f0544f;
+  --color-light: #ebfffd;
+  --color-dark: #45607b;
+  --color-black: #212121;
+  --color-white: #ffffff;
 }
 
-$primary-color: var(--color-primary);
-$secondary-color: var(--color-secondary);
-$accent-1: var(--accent-primary);
-$accent-2: var(--accent-secondary);
-$dark: var(--dark);
-$light: var(--light);
-$grey: var(--grey);
-$orange: var(--orange);
+* {
+  // Dark Theme Colors
+  &.dark-theme {
+    --hue-rotate: 0;
+    filter: hue-rotate(0);
+  }
+
+  // Light Theme Colors
+  &.light-theme {
+    --hue-rotate: 180 !important;
+    filter: hue-rotate(180deg) !important;
+  }
+}
+
+$color-primary: var(--color-primary);
+$color-secondary: var(--color-secondary);
+$color-accent-1: var(--color-accent-1);
+$color-accent-2: var(--color-accent-2);
+$color-light: var(--color-light);
+$color-dark: var(--color-dark);
+$color-black: var(--color-black);
+$color-white: var(--color-white);
+$hueRotate: var(--hue-rotate);

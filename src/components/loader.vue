@@ -80,14 +80,14 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component"
+import { defineComponent } from "vue"
 
-@Options({
+export default defineComponent({
+  name: "Loader",
   mounted() {
     document.body.classList.add("loaded")
   },
 })
-export default class loader extends Vue {}
 </script>
 
 <style lang="scss" scoped>
@@ -106,7 +106,7 @@ export default class loader extends Vue {}
 /* line 169, src/scss/components/_page.scss */
 .loaded #logo-svg-main .st0 {
   fill: none;
-  stroke: $primary-color;
+  stroke: $color-primary;
   stroke-width: 1.9534;
   stroke-miterlimit: 10;
   stroke-dasharray: 181.988;
@@ -119,7 +119,7 @@ export default class loader extends Vue {}
 /* line 184, src/scss/components/_page.scss */
 .loaded #logo-svg-main .st1 {
   fill: none;
-  stroke: $light;
+  stroke: $color-light;
   stroke-width: 1.9534;
   stroke-miterlimit: 10;
   stroke-dasharray: 181.988;
@@ -132,7 +132,7 @@ export default class loader extends Vue {}
 /* line 198, src/scss/components/_page.scss */
 .loaded #logo-svg-main .st2 {
   fill: none;
-  stroke: $light;
+  stroke: $color-light;
   stroke-width: 1.9534;
   stroke-miterlimit: 10;
   stroke-dasharray: 878.7;
@@ -196,46 +196,46 @@ export default class loader extends Vue {}
 }
 @keyframes loaded2 {
   0% {
-    fill: $primary-color;
+    fill: $color-primary;
     stroke-dashoffset: 181.988;
     fill-opacity: 0;
   }
   80% {
-    fill: $primary-color;
+    fill: $color-primary;
     stroke-dashoffset: 0;
     fill-opacity: 0;
   }
   90%,
   100% {
-    fill: $primary-color;
+    fill: $color-primary;
     stroke-dashoffset: 0;
     fill-opacity: 1;
   }
 }
 @keyframes loaded4 {
   0% {
-    fill: $light;
+    fill: $color-light;
     stroke-opacity: 1;
     stroke-dashoffset: 878.7;
     fill-opacity: 0;
   }
   20% {
-    fill: $light;
+    fill: $color-light;
     fill-opacity: 0;
   }
   45%,
   55% {
-    fill: $light;
+    fill: $color-light;
     // stroke-opacity: 0;
     stroke-dashoffset: 0;
     fill-opacity: 1;
   }
   80% {
-    fill: $light;
+    fill: $color-light;
     fill-opacity: 0;
   }
   100% {
-    fill: $light;
+    fill: $color-light;
     stroke-opacity: 1;
     stroke-dashoffset: -878.7;
     fill-opacity: 0;
