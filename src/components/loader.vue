@@ -119,7 +119,7 @@ export default defineComponent({
 /* line 184, src/scss/components/_page.scss */
 .loaded #logo-svg-main .st1 {
   fill: none;
-  stroke: $color-light;
+  stroke: $color-dark;
   stroke-width: 1.9534;
   stroke-miterlimit: 10;
   stroke-dasharray: 181.988;
@@ -132,7 +132,7 @@ export default defineComponent({
 /* line 198, src/scss/components/_page.scss */
 .loaded #logo-svg-main .st2 {
   fill: none;
-  stroke: $color-light;
+  stroke: $color-dark;
   stroke-width: 1.9534;
   stroke-miterlimit: 10;
   stroke-dasharray: 878.7;
@@ -214,28 +214,28 @@ export default defineComponent({
 }
 @keyframes loaded4 {
   0% {
-    fill: $color-light;
+    fill: $color-dark;
     stroke-opacity: 1;
     stroke-dashoffset: 878.7;
     fill-opacity: 0;
   }
   20% {
-    fill: $color-light;
+    fill: $color-dark;
     fill-opacity: 0;
   }
   45%,
   55% {
-    fill: $color-light;
+    fill: $color-dark;
     // stroke-opacity: 0;
     stroke-dashoffset: 0;
     fill-opacity: 1;
   }
   80% {
-    fill: $color-light;
+    fill: $color-dark;
     fill-opacity: 0;
   }
   100% {
-    fill: $color-light;
+    fill: $color-dark;
     stroke-opacity: 1;
     stroke-dashoffset: -878.7;
     fill-opacity: 0;
