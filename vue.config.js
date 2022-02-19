@@ -1,13 +1,16 @@
-// const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin
+/* eslint-disable @typescript-eslint/no-var-requires */
+
+// const BundleAnalyzerPlugin =
+//   require("webpack-bundle-analyzer").BundleAnalyzerPlugin
 
 module.exports = {
   productionSourceMap: false,
   outputDir: "dist",
   assetsDir: "static",
 
-  //   configureWebpack: {
-  //     plugins: [new BundleAnalyzerPlugin()],
-  //   },
+  // configureWebpack: {
+  //   plugins: [new BundleAnalyzerPlugin()],
+  // },
   pwa: {
     name: "Suveer Raina",
     themeColor: "#00bfa9",
@@ -69,7 +72,7 @@ module.exports = {
     loaderOptions: {
       sass: {
         implementation: require("sass"), // This line must in sass option
-        prependData: `
+        additionalData: `
           @import "./src/assets/styles/_variables.scss";
           @import "./src/assets/styles/_globals.scss";
           `,

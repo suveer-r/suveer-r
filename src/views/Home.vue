@@ -1,9 +1,9 @@
 <template>
   <div class="home" id="home">
-    <Loader style="margin: 0 auto" />
+    <Loader class="my-0 mx-auto" />
 
     <div id="construct">
-      <span class="italic font-semibold">[...UNDER_CONSTRUCTION()]</span>
+      <span class="italic font-semibold square">...UNDER_CONSTRUCTION()</span>
     </div>
   </div>
 </template>

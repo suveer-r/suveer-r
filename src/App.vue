@@ -1,6 +1,6 @@
 <template>
   <div class="title white-text font-thin italic text-current cursor-crosshair">
-    &#60;/<span class="text-primary-color">Suveer</span>/&#62;
+    <span class="text-primary-color triangle">Suveer</span>
   </div>
   <ThemeButton class="toggleTheme" />
   <!-- <div id="nav">
@@ -48,6 +48,45 @@ export default defineComponent({
 
 #app {
   color: $color-dark;
+}
+span {
+  &.triangle {
+    &::before {
+      content: "</";
+    }
+    &::after {
+      content: "/>";
+    }
+  }
+  &.square {
+    &::before {
+      content: "[";
+    }
+    &::after {
+      content: "]";
+    }
+  }
+  &.curly {
+    &::before {
+      content: "{";
+    }
+    &::after {
+      content: "}";
+    }
+  }
+  &.htmlComment {
+    &::before {
+      content: "<--";
+    }
+    &::after {
+      content: "-->";
+    }
+  }
+  &::before,
+  &::after {
+    display: inline-block;
+    color: $color-dark;
+  }
 }
 
 #nav {
