@@ -37,25 +37,40 @@ const mutations = {
 }
 
 const actions = {
-  async FetchJsonData({ dispatch }: { dispatch: Function }, _data = jsonData) {
-    dispatch("FetchColors")
-    dispatch("FetchKnowledge")
+  async FetchJsonData(
+    { dispatch }: { dispatch: (_name: string, _arg: Data) => void },
+    _data = jsonData
+  ) {
+    dispatch("FetchColors", _data)
+    dispatch("FetchKnowledge", _data)
   },
 
-  async FetchColors({ commit }: { commit: Function }, _data = jsonData) {
-    const dataFile = _data
+  async FetchColors(
+    {
+      commit,
+    }: {
+      commit: (_name: string, _arg: Data | ColorsClass | KnowledgeClass) => void
+    },
+    _data = jsonData
+  ) {
     console.log(`dataFile: \n`, _data.colors)
     commit("WRITE_COLORS", _data.colors)
   },
 
-  async FetchKnowledge({ commit }: { commit: Function }, _data = jsonData) {
-    const dataFile = _data
+  async FetchKnowledge(
+    {
+      commit,
+    }: {
+      commit: (_name: string, _arg: Data | ColorsClass | KnowledgeClass) => void
+    },
+    _data = jsonData
+  ) {
     console.log(`dataFile: \n`, _data.knowledge)
     commit("WRITE_KNOWLEDGE", _data.knowledge)
   },
 }
 
-export const DataManager: Module<Data, any> = {
+export const DataManager: Module<Data, unknown> = {
   namespaced: true,
   state,
   getters,

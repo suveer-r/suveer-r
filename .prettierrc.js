@@ -5,4 +5,5 @@ module.exports = {
   arrowParens: "always",
   endOfLine: "auto",
   bracketSpacing: true,
+  tabWidth: 2,
 }

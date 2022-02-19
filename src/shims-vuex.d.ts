@@ -1,7 +1,6 @@
 // vuex.d.ts
-import { ComponentCustomProperties } from "vue"
 import { Store } from "vuex"
-import { Data, ColorsClass, LanguageState } from "./store/interfaces"
+import { Data } from "./store/interfaces"
 
 declare module "@vue/runtime-core" {
   // provide typings for `this.$store`
