@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="toggleTheme">
     <input
-      @change="toggleTheme"
       id="checkbox"
       type="checkbox"
       class="switch-checkbox"
+      @change="toggleTheme"
     />
     <label for="checkbox" class="switch-label">
       <span v-if="userTheme === 'light-theme'">🌑</span>
@@ -14,52 +14,57 @@
 </template>
 
 <script>
-import { defineComponent } from "vue"
-export default defineComponent({
+export default {
   name: "ThemeButton",
-  mounted() {
-    const initUserTheme = this.getMediaPreference()
-    this.setTheme(initUserTheme)
-  },
+}
+</script>
 
-  data() {
-    return {
-      userTheme: "dark-theme",
-    }
-  },
+<script setup>
+import { ref, onMounted } from "vue"
 
-  methods: {
-    toggleTheme() {
-      const activeTheme = localStorage.getItem("user-theme")
-      if (activeTheme === "light-theme") {
-        this.setTheme("dark-theme")
-      } else {
-        this.setTheme("light-theme")
-      }
-    },
+const userTheme = ref("dark-theme")
 
-    setTheme(theme) {
-      localStorage.setItem("user-theme", theme)
-      this.userTheme = theme
-      document.documentElement.className = theme
-    },
-
-    getMediaPreference() {
-      const hasDarkPreference = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches
-      if (hasDarkPreference) {
-        return "dark-theme"
-      } else {
-        return "light-theme"
-      }
-    },
-  },
+onMounted(() => {
+  const initUserTheme = getMediaPreference()
+  setTheme(initUserTheme)
 })
+
+// Functions
+function toggleTheme() {
+  const activeTheme = localStorage.getItem("user-theme")
+  if (activeTheme === "light-theme") {
+    setTheme("dark-theme")
+  } else {
+    setTheme("light-theme")
+  }
+}
+
+function setTheme(theme) {
+  localStorage.setItem("user-theme", theme)
+  userTheme.value = theme
+  document.documentElement.className = theme
+}
+
+function getMediaPreference() {
+  const hasDarkPreference = window.matchMedia(
+    "(prefers-color-scheme: dark)"
+  ).matches
+  if (hasDarkPreference) {
+    return "dark-theme"
+  } else {
+    return "light-theme"
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.toggleTheme {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+}
+
 .switch-checkbox {
   display: none;
 }
