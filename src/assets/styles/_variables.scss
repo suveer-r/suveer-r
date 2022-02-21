@@ -1,25 +1,24 @@
 :root {
-  --color-primary: #00bfa9;
-  --color-secondary: #0083d8;
-  --color-accent-1: #5964c4;
-  --color-accent-2: #f0544f;
-  --color-light: #ebfffd;
-  --color-dark: #45607b;
-  --color-black: #212121;
-  --color-white: #ffffff;
-}
+  --color-primary: hsl(163, 100%, 37%); /* #00bf89 */
+  --color-secondary: hsl(204, 100%, 42%); /* #0083d8 */
+  --color-accent-1: hsl(234, 48%, 56%); /* #5964c4 */
+  --color-accent-2: hsl(2, 84%, 63%); /* #f0544f */
+  --color-light: hsl(174, 100%, 96%); /* #ebfffd */
+  --color-dark: hsl(210, 28%, 38%); /* #45607b */
+  --color-black: hsl(180, 4%, 9%); /* #161818 */
+  --color-white: hsl(174, 100%, 96%); /* #ebfffd */
 
-* {
   // Dark Theme Colors
   &.dark-theme {
-    --hue-rotate: 0;
-    filter: hue-rotate(0);
+    --color-light: #ebfffd;
+    --color-black: #161818;
+    --color-white: #ebfffd;
   }
-
   // Light Theme Colors
   &.light-theme {
-    --hue-rotate: 180 !important;
-    filter: hue-rotate(180deg) !important;
+    --color-light: #45607b;
+    --color-white: #161818;
+    --color-black: #ebfffd;
   }
 }
 
@@ -32,3 +31,17 @@ $color-dark: var(--color-dark);
 $color-black: var(--color-black);
 $color-white: var(--color-white);
 $hueRotate: var(--hue-rotate);
+
+// * {
+//   // Dark Theme Colors
+//   &.dark-theme {
+//     --hue-rotate: 0;
+//     filter: hue-rotate(0);
+//   }
+
+//   // Light Theme Colors
+//   &.light-theme {
+//     --hue-rotate: 180 !important;
+//     filter: hue-rotate(180deg) !important;
+//   }
+// }

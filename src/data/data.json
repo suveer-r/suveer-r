@@ -99,41 +99,51 @@
         "icon": ""
       },
       "8": {
-        "lang": "Tailwind",
+        "lang": "Lottie",
         "level": 10,
         "icon": ""
       },
       "9": {
-        "lang": "Git",
+        "lang": "GSAP",
+        "level": 10,
+        "icon": ""
+      },
+      "10": {
+        "lang": "Tailwind",
         "level": 10,
         "icon": ""
       },
       "11": {
-        "lang": "Plastic SCM",
+        "lang": "Git",
         "level": 10,
         "icon": ""
       },
       "12": {
-        "lang": "Netlify",
+        "lang": "Plastic SCM",
         "level": 10,
         "icon": ""
       },
       "13": {
-        "lang": "Vercel",
+        "lang": "Netlify",
         "level": 10,
         "icon": ""
       },
       "14": {
-        "lang": "Firebase",
+        "lang": "Vercel",
         "level": 10,
         "icon": ""
       },
       "15": {
-        "lang": "Github",
+        "lang": "Firebase",
         "level": 10,
         "icon": ""
       },
       "16": {
+        "lang": "Github",
+        "level": 10,
+        "icon": ""
+      },
+      "17": {
         "lang": "Yarn",
         "level": 10,
         "icon": ""
@@ -183,13 +193,13 @@
     }
   },
   "colors": {
-    "primary": "#00BFA9",
+    "primary": "#00BF89",
     "secondary": "#0083D8",
     "tertiary": "#5964C4",
     "contrast": "#F0544F",
-    "dark": "#45607B",
     "light": "#EBFFFD",
-    "black": "#212121",
-    "white": "#FFFFFF"
+    "dark": "#45607B",
+    "black": "#161818",
+    "white": "#EBFFFD"
   }
 }

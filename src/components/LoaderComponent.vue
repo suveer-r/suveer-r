@@ -1,8 +1,8 @@
 <template>
   <div class="logo" alt="logo">
     <svg
-      version="1.1"
       id="logo-svg-main"
+      version="1.1"
       viewBox="-203.5 0.5 833 263"
       xml:space="preserve"
     >
@@ -80,13 +80,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue"
+export default {
+  name: "LoaderComponent",
+}
+</script>
 
-export default defineComponent({
-  name: "Loader",
-  mounted() {
-    document.body.classList.add("loaded")
-  },
+<script lang="ts" setup>
+import { onMounted } from "vue"
+onMounted(() => {
+  document.body.classList.add("loaded")
 })
 </script>
 
@@ -119,7 +121,7 @@ export default defineComponent({
 /* line 184, src/scss/components/_page.scss */
 .loaded #logo-svg-main .st1 {
   fill: none;
-  stroke: $color-light;
+  stroke: $color-dark;
   stroke-width: 1.9534;
   stroke-miterlimit: 10;
   stroke-dasharray: 181.988;
@@ -132,7 +134,7 @@ export default defineComponent({
 /* line 198, src/scss/components/_page.scss */
 .loaded #logo-svg-main .st2 {
   fill: none;
-  stroke: $color-light;
+  stroke: $color-dark;
   stroke-width: 1.9534;
   stroke-miterlimit: 10;
   stroke-dasharray: 878.7;
@@ -214,28 +216,28 @@ export default defineComponent({
 }
 @keyframes loaded4 {
   0% {
-    fill: $color-light;
+    fill: $color-dark;
     stroke-opacity: 1;
     stroke-dashoffset: 878.7;
     fill-opacity: 0;
   }
   20% {
-    fill: $color-light;
+    fill: $color-dark;
     fill-opacity: 0;
   }
   45%,
   55% {
-    fill: $color-light;
+    fill: $color-dark;
     // stroke-opacity: 0;
     stroke-dashoffset: 0;
     fill-opacity: 1;
   }
   80% {
-    fill: $color-light;
+    fill: $color-dark;
     fill-opacity: 0;
   }
   100% {
-    fill: $color-light;
+    fill: $color-dark;
     stroke-opacity: 1;
     stroke-dashoffset: -878.7;
     fill-opacity: 0;

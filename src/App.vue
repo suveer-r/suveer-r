@@ -1,32 +1,20 @@
 <template>
-  <div class="title white-text font-thin italic text-current cursor-crosshair">
-    &#60;/<span class="text-primary-color">Suveer</span>/&#62;
-  </div>
-  <ThemeButton class="toggleTheme" />
-  <!-- <div id="nav">
-    <router-link tag="btn" to="/">Home</router-link>
-  </div> -->
+  <ThemeButton />
+
   <router-view />
 </template>
 
-<script lang="ts">
-import { defineAsyncComponent, defineComponent } from "vue"
-const ThemeButton = defineAsyncComponent(
-  () => import("./components/themeButton.vue")
-)
+<script setup lang="ts">
+// import { onMounted } from "vue"
+// import { dataStore } from "./store/index"
 
-export default defineComponent({
-  name: "App",
-  components: { ThemeButton },
-  mounted() {
-    this.$store.dispatch("DataManager/FetchJsonData")
-  },
-  methods: {
-    test() {
-      console.log(this.$store.getters["DataManager/allColors"])
-    },
-  },
-})
+// const getDataStore = dataStore()
+
+// function TestF() {
+//   getDataStore.FetchJsonData()
+// }
+
+// onMounted(() => TestF())
 </script>
 
 <style lang="scss">
@@ -50,32 +38,43 @@ export default defineComponent({
   color: $color-dark;
 }
 
-#nav {
-  top: 1em;
-  padding: 30px 0;
-  position: fixed;
-  width: 100%;
-
-  a {
-    font-weight: bold;
-    color: #999;
-
-    &.router-link-exact-active {
-      color: $color-primary;
+span {
+  &.triangle {
+    &::before {
+      content: "</";
+    }
+    &::after {
+      content: "/>";
     }
   }
-}
-.toggleTheme {
-  position: absolute;
-  top: 1.5em;
-  right: 1.5em;
-}
-
-.title {
-  font-size: 16px;
-  float: left;
-  position: fixed;
-  top: 1.5em;
-  left: 1.5em;
+  &.square {
+    &::before {
+      content: "[";
+    }
+    &::after {
+      content: "]";
+    }
+  }
+  &.curly {
+    &::before {
+      content: "{";
+    }
+    &::after {
+      content: "}";
+    }
+  }
+  &.htmlComment {
+    &::before {
+      content: "<--";
+    }
+    &::after {
+      content: "-->";
+    }
+  }
+  &::before,
+  &::after {
+    display: inline-block;
+    color: $color-dark;
+  }
 }
 </style>
