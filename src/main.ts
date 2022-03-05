@@ -11,7 +11,7 @@ import "./assets/styles/index.css"
 const routes = setupLayouts(generatedRoutes)
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes,
+	history: createWebHistory(import.meta.env.BASE_URL),
+	routes,
 })
 createApp(App).use(router).use(createPinia()).use(createHead()).mount("#app")

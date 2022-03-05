@@ -1,35 +1,35 @@
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "useDefineForClassFields": true,
-    "module": "esnext",
-    "isolatedModules": true,
-    "moduleResolution": "Node",
-    "strict": true,
-    "jsx": "preserve",
-    "importHelpers": true,
-    "sourceMap": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "lib": ["esnext", "dom"],
-    "types": [
-      "vite/client",
-      "vite-plugin-pages/client",
-      "node",
-      "vite-plugin-vue-layouts/client"
-    ],
-    "strictNullChecks": true,
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
-    "noUnusedParameters": true,
-    "baseUrl": "src",
-    "paths": {
-      "@/*": ["*"]
-    },
-    "noUnusedLocals": true,
-    "allowJs": true
-  },
-  "include": ["src/**/*.ts", "*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "references": [{ "path": "./tsconfig.node.json" }],
-  "exclude": ["dist", "node_modules"]
+	"compilerOptions": {
+		"target": "esnext",
+		"useDefineForClassFields": true,
+		"module": "esnext",
+		"isolatedModules": true,
+		"moduleResolution": "Node",
+		"strict": true,
+		"jsx": "preserve",
+		"importHelpers": true,
+		"sourceMap": true,
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"lib": ["esnext", "dom"],
+		"types": [
+			"vite/client",
+			"vite-plugin-pages/client",
+			"node",
+			"vite-plugin-vue-layouts/client"
+		],
+		"strictNullChecks": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true,
+		"noUnusedParameters": true,
+		"baseUrl": "src",
+		"paths": {
+			"@/*": ["*"]
+		},
+		"noUnusedLocals": true,
+		"allowJs": true
+	},
+	"include": ["src/**/*.ts", "*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+	"references": [{ "path": "./tsconfig.node.json" }],
+	"exclude": ["dist", "node_modules"]
 }
