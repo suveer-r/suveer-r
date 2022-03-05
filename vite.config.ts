@@ -8,94 +8,94 @@ import { resolve } from "path"
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    vue(),
+	plugins: [
+		vue(),
 
-    Pages({
-      extensions: ["vue"],
-      dirs: [{ dir: resolve(__dirname, "./src/pages"), baseRoute: "" }],
-      importMode() {
-        return "sync"
-      },
-      nuxtStyle: true,
-      resolver: "vue",
-    }),
+		Pages({
+			extensions: ["vue"],
+			dirs: [{ dir: resolve(__dirname, "./src/pages"), baseRoute: "" }],
+			importMode() {
+				return "sync"
+			},
+			nuxtStyle: true,
+			resolver: "vue",
+		}),
 
-    VitePWA({
-      includeManifestIcons: true,
-      minify: false,
-      includeAssets: ["robots.txt", "favicon.ico", "apple-touch-icon.png"],
-      registerType: "autoUpdate",
-      scope: "/",
-      manifest: {
-        name: "Suveer Raina",
-        short_name: "SR",
-        description: "Suveer Raina's Portfolio",
-        lang: "en",
-        dir: "ltr",
-        start_url: "/",
-        theme_color: "#00bfa9",
-        background_color: "#00a1b1",
-        icons: [
-          {
-            src: "favicon-16x16.png",
-            sizes: "16x16",
-            type: "image/png",
-          },
-          {
-            src: "favicon-32x32.png",
-            sizes: "32x32",
-            type: "image/png",
-          },
-          {
-            src: "android-chrome-192x192.png",
-            sizes: "192x192",
-            type: "image/png",
-          },
-          {
-            src: "android-chrome-512x512.png",
-            sizes: "512x512",
-            type: "image/png",
-          },
-          {
-            src: "android-chrome-512x512.png",
-            sizes: "512x512",
-            type: "image/png",
-            purpose: "any maskable",
-          },
-        ],
-      },
-    }),
+		VitePWA({
+			includeManifestIcons: true,
+			minify: false,
+			includeAssets: ["robots.txt", "favicon.ico", "apple-touch-icon.png"],
+			registerType: "autoUpdate",
+			scope: "/",
+			manifest: {
+				name: "Suveer Raina",
+				short_name: "SR",
+				description: "Suveer Raina's Portfolio",
+				lang: "en",
+				dir: "ltr",
+				start_url: "/",
+				theme_color: "#00bfa9",
+				background_color: "#00a1b1",
+				icons: [
+					{
+						src: "favicon-16x16.png",
+						sizes: "16x16",
+						type: "image/png",
+					},
+					{
+						src: "favicon-32x32.png",
+						sizes: "32x32",
+						type: "image/png",
+					},
+					{
+						src: "android-chrome-192x192.png",
+						sizes: "192x192",
+						type: "image/png",
+					},
+					{
+						src: "android-chrome-512x512.png",
+						sizes: "512x512",
+						type: "image/png",
+					},
+					{
+						src: "android-chrome-512x512.png",
+						sizes: "512x512",
+						type: "image/png",
+						purpose: "any maskable",
+					},
+				],
+			},
+		}),
 
-    Layouts({
-      layoutsDirs: ["src/layouts"],
-      defaultLayout: "_default",
-    }),
+		Layouts({
+			layoutsDirs: ["src/layouts"],
+			defaultLayout: "_default",
+		}),
 
-    Components({
-      /* options */
-      dirs: ["src/components"],
-      dts: true,
-      extensions: ["vue"],
-      deep: true,
-      directives: true,
-      include: [/\.vue$/, /\.vue\?vue/],
-      exclude: [
-        /[\\/]node_modules[\\/]/,
-        /[\\/]\.git[\\/]/,
-        /[\\/]\.nuxt[\\/]/,
-      ],
-    }),
-  ],
+		Components({
+			/* options */
+			dirs: ["src/components"],
+			dts: true,
+			extensions: ["vue"],
+			deep: true,
+			directives: true,
+			include: [/\.vue$/, /\.vue\?vue/],
+			exclude: [
+				/[\\/]node_modules[\\/]/,
+				/[\\/]\.git[\\/]/,
+				/[\\/]\.nuxt[\\/]/,
+			],
+		}),
+	],
 
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `
+	css: {
+		preprocessorOptions: {
+			scss: {
+				additionalData: `
           @import "./src/assets/styles/_variables.scss";
           @import "./src/assets/styles/_globals.scss";
           `,
-      },
-    },
-  },
+			},
+		},
+	},
 })
