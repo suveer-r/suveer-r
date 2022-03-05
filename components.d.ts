@@ -6,6 +6,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     FooterComponent: typeof import('./src/components/FooterComponent.vue')['default']
     LoaderComponent: typeof import('./src/components/LoaderComponent.vue')['default']
+    ReloadPrompt: typeof import('./src/components/ReloadPrompt.vue')['default']
     ThemeButton: typeof import('./src/components/ThemeButton.vue')['default']
   }
 }

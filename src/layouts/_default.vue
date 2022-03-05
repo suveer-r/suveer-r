@@ -4,6 +4,8 @@
   </div>
 
   <router-view />
+
+  <ReloadPrompt />
 </template>
 
 <style lang="scss" scoped>
