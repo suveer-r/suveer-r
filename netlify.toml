@@ -16,10 +16,3 @@
   [headers.values]
     Content-Type = "application/manifest+json"
 
-[[plugins]]
-package = "@netlify/plugin-sitemap"
-  [plugins.inputs]
-    trailingSlash = true
-
-[[plugins]]
-package = "netlify-plugin-hashfiles"
