@@ -28,7 +28,6 @@
 		"eslint-plugin-html": "^6.2.0",
 		"eslint-plugin-prettier": "^4.0.0",
 		"eslint-plugin-vue": "^8.4.1",
-		"netlify-plugin-image-optim": "^0.4.0",
 		"postcss": "^8.4.6",
 		"prettier": "^2.5.1",
 		"sass": "^1.49.8",
