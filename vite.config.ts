@@ -14,9 +14,6 @@ export default defineConfig({
 		Pages({
 			extensions: ["vue"],
 			dirs: [{ dir: resolve(__dirname, "./src/pages"), baseRoute: "" }],
-			importMode() {
-				return "sync"
-			},
 			nuxtStyle: true,
 			resolver: "vue",
 		}),
