@@ -5,7 +5,7 @@
 
 	<router-view />
 
-	<ReloadPrompt />
+	<!-- <ReloadPrompt /> -->
 </template>
 
 <style lang="scss" scoped>
